@@ -1,0 +1,45 @@
+ <-1> 29/06/2020 15:32:50.436     [Action ] -                       >>Starts Handle  Event: v_cigamPesquisaPaginada.Visua
+ <-1> 29/06/2020 15:32:50.436     [Action ] -                         Flow - Variable Parameter: 'p_row'
+ <-1> 29/06/2020 15:32:50.436     [Action ] -                         Flow - Remark:
+ <-1> 29/06/2020 15:32:50.437     [Action ] -                         Flow - Variable Virtual: 'v_registroAlpha'
+ <-1> 29/06/2020 15:32:50.437     [Action ] -                         Flow - Variable Virtual: 'v_registroNumeric'
+ <-1> 29/06/2020 15:32:50.437     [Action ] -                         Flow - Remark:
+ <-1> 29/06/2020 15:32:50.438     [Action ] -                         Flow - Condition: Exp = 32, Result = True
+ <-1> 29/06/2020 15:32:50.438     [Action ] -                         Flow - Block While:
+ <-1> 29/06/2020 15:32:50.438     [Action ] -                         Flow - Condition: Exp = 48, Result = True
+ <-1> 29/06/2020 15:32:50.439     [Action ] -                         Flow - Evaluate:
+ <-1> 29/06/2020 15:32:50.439     [Action ] -                         Flow - Condition: Exp = 50, Result = False
+ <-1> 29/06/2020 15:32:50.439     [Action ] -                         Flow - Evaluate:  [Not Executed]
+ <-1> 29/06/2020 15:32:50.440     [Action ] -                         Flow - Condition: Exp = 50, Result = False
+ <-1> 29/06/2020 15:32:50.440     [Action ] -                         Flow - Evaluate:  [Not Executed]
+ <-1> 29/06/2020 15:32:50.440     [Action ] -                         Flow - Condition: Exp = 48, Result = True
+ <-1> 29/06/2020 15:32:50.440     [Action ] -                         Flow - Evaluate:
+ <-1> 29/06/2020 15:32:50.449     [Action ] -                         >>Starts Handle Function Event: RetornaRegistroNumeric
+ <-1> 29/06/2020 15:32:50.449     [Action ] -                           Flow - Variable Parameter: 'p_row'
+ <-1> 29/06/2020 15:32:50.450     [Action ] -                           Flow - Variable Parameter: 'p_campo'
+ <-1> 29/06/2020 15:32:50.450     [Action ] -                           Flow - Remark:
+ <-1> 29/06/2020 15:32:50.450     [Action ] -                           Flow - Variable Virtual: 'v_registroDouble'
+ <-1> 29/06/2020 15:32:50.451     [Action ] -                           Flow - Remark:
+ <-1> 29/06/2020 15:32:50.451     [Action ] -                           Flow - Update: 'OBZ: v_registroDouble' <== exp #119
+ <-1> 29/06/2020 15:32:50.452     [Action ] -                           Flow - Remark:
+ <-1> 29/06/2020 15:32:50.452     [Action ] -                         <<Ends Handle Function Event: RetornaRegistroNumeric
+ <-1> 29/06/2020 15:32:50.453     [Action ] -                         Flow - Condition: Exp = 32, Result = False
+ <-1> 29/06/2020 15:32:50.453     [Action ] -                         Flow - Block End:
+ <-1> 29/06/2020 15:32:50.453     [Action ] -                         Flow - Evaluate:
+ <-1> 29/06/2020 15:32:50.454     [Action ] -                         >>Starts Handle Function Event: ChamaRegistro
+ <-1> 29/06/2020 15:32:50.454     [Action ] -                           Flow - Variable Parameter: 'p_registroAlpha'
+ <-1> 29/06/2020 15:32:50.454     [Action ] -                           Flow - Variable Parameter: 'p_registroNumeric'
+ <-1> 29/06/2020 15:32:50.454     [Action ] -                           Flow - Variable Parameter: 'p_modo'
+ <-1> 29/06/2020 15:32:50.455     [Action ] -                           Flow - Remark:
+ <-1> 29/06/2020 15:32:50.455     [Action ] -                           Flow - Evaluate:
+ <-1> 29/06/2020 15:32:50.455     [Action ] -                           Flow - Condition: Exp = 86, Result = True
+ <-1> 29/06/2020 15:32:50.456     [Action ] -                           Flow - Block If:
+ <-1> 29/06/2020 15:32:50.456     [Action ] -                           Flow - Evaluate:
+ <-1> 29/06/2020 15:32:50.456     [Action ] -                           Flow - Evaluate:
+ <-1> 29/06/2020 15:32:50.457     [Action ] -                           Flow - Evaluate:
+ <-1> 29/06/2020 15:32:50.457     [Action ] -                           Flow - Block End:
+ <-1> 29/06/2020 15:32:50.457     [Action ] -                           Flow - Remark:
+ <-1> 29/06/2020 15:32:50.458     [Action ] -                         <<Ends Handle Function Event: ChamaRegistro
+ <-1> 29/06/2020 15:32:50.458     [Action ] -                         Flow - Remark:
+ <-1> 29/06/2020 15:32:50.458     [Action ] -                       <<Ends Handle  Event: v_cigamPesquisaPaginada.Visua
+

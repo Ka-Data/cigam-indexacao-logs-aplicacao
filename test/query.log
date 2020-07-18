@@ -1,0 +1,4 @@
+ <-1> 29/06/2020 15:50:45.980     [Action ] -                      ,12421       OPEN :RngA197 USING DESCRIPTOR sqlda
+ <-1> 29/06/2020 15:50:45.980     [Action ] -                      ,12421       EXECUTE RngA197 : SELECT  Cd_material, Cd_grupo, Cd_sub_grupo, Centro_controle, Descricao, Cd_unidade_medi, Pr_custo, Cd_conta_gerenc, Peso, Pe_irrf, Pe_frete, Pe_embalagem, Pe_comissao, Pe_reajuste, Classificacao_f, Dt_reajuste, Pe_icms, Pe_ipi, Cd_fabricante, Codigo_fabrica, Referencia, Cd_reduzido, Conversor_compr, Aplicacao, campo85, Cd_especif1, Cd_especif2, Tipo, campo82, campo83, campo95, campo8, campo10, campo94, Qualidade_produ, Valor_ipi, Pr_pauta, campo11, Qt_minimo, Cd_origem_merca, Qt_maxima ,rowid FROM cigam.ESMATERI WHERE Cd_material =  '000031'    ORDER BY Cd_material  ASC
+ <-1> 29/06/2020 15:50:48.980     [Action ] -                      ,12421       FETCH :RngA197 USING DESCRIPTOR sqlda
+
