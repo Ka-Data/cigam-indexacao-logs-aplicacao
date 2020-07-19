@@ -1,0 +1,116 @@
+{
+  "mappings": {
+    "properties": {
+      "@timestamp": {
+        "type": "date"
+      },
+      "@version": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "duration": {
+        "type": "float"
+      },
+      "end_timestamp": {
+        "type": "date"
+      },
+      "log_type": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "handle_event_name": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "handle_event_type": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "indentation_level": {
+        "type": "short"
+      },
+      "query_from": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "query_id": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "query_order_by": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "query_select": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "query_statement": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "query_where": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "start_timestamp": {
+        "type": "date"
+      },
+      "tags": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "task_instance": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "task_load_type": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "task_mode": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+      "task_name": {
+        "type": "keyword",
+        "ignore_above": 256
+      }
+    }
+  }
+}

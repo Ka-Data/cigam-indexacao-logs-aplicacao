@@ -1,0 +1,102 @@
+ <-1> 29/06/2020 16:53:29.414     [Action ] -     >>Starts Handle Timer Event: CGFunctions.00:01:00
+ <-1> 29/06/2020 16:53:29.415     [Action ] -       Flow - Remark: 
+ <-1> 29/06/2020 16:53:29.415     [Action ] -       Flow - Evaluate: 
+ <-1> 29/06/2020 16:53:29.415     [Action ] -       Flow - Call SubTask :: PossuiAlertas
+ <-1> 29/06/2020 16:53:29.416     [Action ] -         Open DB Table - '{CGDataMin}.GEALERTA (#280) (R,W)'
+ <-1> 29/06/2020 16:53:29.413     [Action ] -         >>Starts load Batch Task - 'PossuiAlertas' in Query mode (Task Instance: 6453, Resident)
+ <-1> 29/06/2020 16:53:29.417     [Action ] -         Ends Load Task
+ <-1> 29/06/2020 16:53:29.417     [Action ] -         9,75921  	PREPARE RngA574: SELECT  Cd_usu_aviso, Concluido, Dt_aviso, Hr_aviso, Id ,rowid FROM cigam.GEALERTA WHERE Cd_usu_aviso =  :1    AND Concluido =  :2    AND Dt_aviso <=  :3    ORDER BY Cd_usu_aviso  ASC, Concluido  ASC, Dt_aviso  ASC, Hr_aviso  ASC
+ <-1> 29/06/2020 16:53:29.417     [Action ] -         ),75921  	DESCRIBE :RngA574 INTO sqlda
+ <-1> 29/06/2020 16:53:29.417     [Action ] -          ,75921  	BIND :RngA574 INTO sqlda
+ <-1> 29/06/2020 16:53:29.418     [Action ] -          ,75921  	OPEN :RngA574 USING DESCRIPTOR sqlda
+ <-1> 29/06/2020 16:53:29.418     [Action ] -          ,75921  	EXECUTE RngA574 : SELECT  Cd_usu_aviso, Concluido, Dt_aviso, Hr_aviso, Id ,rowid FROM cigam.GEALERTA WHERE Cd_usu_aviso =  'A00'    AND Concluido =  'N'    AND Dt_aviso <=  '20200629'    ORDER BY Cd_usu_aviso  ASC, Concluido  ASC, Dt_aviso  ASC, Hr_aviso  ASC
+ <-1> 29/06/2020 16:53:29.418     [Action ] -         Load records
+ <-1> 29/06/2020 16:53:29.418     [Action ] -         Read Transaction 0
+ <-1> 29/06/2020 16:53:29.419     [Action ] -         Commit Transaction 0
+ <-1> 29/06/2020 16:53:29.419     [Action ] -         Starts Closing Batch Task - 'PossuiAlertas' (Task Instance: 6453)
+ <-1> 29/06/2020 16:53:29.419     [Action ] -            ,75921  	CLOSE :RngA574
+ <-1> 29/06/2020 16:53:29.419     [Action ] -            ,75921  	FREE :RngA574
+ <-1> 29/06/2020 16:53:29.419     [Action ] -           Closed database {CGDataMin}.GEALERTA (#280)
+ <-1> 29/06/2020 16:53:29.420     [Action ] -       <<Ends Close Task
+ <-1> 29/06/2020 16:53:29.420     [Action ] -       Flow - Evaluate: 
+ <-1> 29/06/2020 16:53:29.420     [Action ] -       Flow - Remark: 
+ <-1> 29/06/2020 16:53:29.420     [Action ] -     <<Ends Handle Timer Event: CGFunctions.00:01:00
+ <-1> 29/06/2020 16:54:29.417     [Action ] -     >>Starts Handle Timer Event: CGFunctions.00:01:00
+ <-1> 29/06/2020 16:54:29.417     [Action ] -       Flow - Remark: 
+ <-1> 29/06/2020 16:54:29.417     [Action ] -       Flow - Evaluate: 
+ <-1> 29/06/2020 16:54:29.418     [Action ] -       Flow - Call SubTask :: PossuiAlertas
+ <-1> 29/06/2020 16:54:29.418     [Action ] -         Open DB Table - '{CGDataMin}.GEALERTA (#280) (R,W)'
+ <-1> 29/06/2020 16:54:29.415     [Action ] -         >>Starts load Batch Task - 'PossuiAlertas' in Query mode (Task Instance: 6454, Resident)
+ <-1> 29/06/2020 16:54:29.419     [Action ] -         Ends Load Task
+ <-1> 29/06/2020 16:54:29.420     [Action ] -         9,35937  	PREPARE RngA574: SELECT  Cd_usu_aviso, Concluido, Dt_aviso, Hr_aviso, Id ,rowid FROM cigam.GEALERTA WHERE Cd_usu_aviso =  :1    AND Concluido =  :2    AND Dt_aviso <=  :3    ORDER BY Cd_usu_aviso  ASC, Concluido  ASC, Dt_aviso  ASC, Hr_aviso  ASC
+ <-1> 29/06/2020 16:54:29.420     [Action ] -         ),35937  	DESCRIBE :RngA574 INTO sqlda
+ <-1> 29/06/2020 16:54:29.420     [Action ] -          ,35937  	BIND :RngA574 INTO sqlda
+ <-1> 29/06/2020 16:54:29.420     [Action ] -          ,35937  	OPEN :RngA574 USING DESCRIPTOR sqlda
+ <-1> 29/06/2020 16:54:29.421     [Action ] -          ,35937  	EXECUTE RngA574 : SELECT  Cd_usu_aviso, Concluido, Dt_aviso, Hr_aviso, Id ,rowid FROM cigam.GEALERTA WHERE Cd_usu_aviso =  'A00'    AND Concluido =  'N'    AND Dt_aviso <=  '20200629'    ORDER BY Cd_usu_aviso  ASC, Concluido  ASC, Dt_aviso  ASC, Hr_aviso  ASC
+ <-1> 29/06/2020 16:54:29.421     [Action ] -         Load records
+ <-1> 29/06/2020 16:54:29.421     [Action ] -         Read Transaction 0
+ <-1> 29/06/2020 16:54:29.421     [Action ] -         Commit Transaction 0
+ <-1> 29/06/2020 16:54:29.421     [Action ] -         Starts Closing Batch Task - 'PossuiAlertas' (Task Instance: 6454)
+ <-1> 29/06/2020 16:54:29.421     [Action ] -            ,35937  	CLOSE :RngA574
+ <-1> 29/06/2020 16:54:29.421     [Action ] -            ,35937  	FREE :RngA574
+ <-1> 29/06/2020 16:54:29.421     [Action ] -           Closed database {CGDataMin}.GEALERTA (#280)
+ <-1> 29/06/2020 16:54:29.422     [Action ] -       <<Ends Close Task
+ <-1> 29/06/2020 16:54:29.422     [Action ] -       Flow - Evaluate: 
+ <-1> 29/06/2020 16:54:29.422     [Action ] -       Flow - Remark: 
+ <-1> 29/06/2020 16:54:29.423     [Action ] -     <<Ends Handle Timer Event: CGFunctions.00:01:00
+ <-1> 29/06/2020 16:55:29.416     [Action ] -     >>Starts Handle Timer Event: CGFunctions.00:01:00
+ <-1> 29/06/2020 16:55:29.416     [Action ] -       Flow - Remark: 
+ <-1> 29/06/2020 16:55:29.417     [Action ] -       Flow - Evaluate: 
+ <-1> 29/06/2020 16:55:29.417     [Action ] -       Flow - Call SubTask :: PossuiAlertas
+ <-1> 29/06/2020 16:55:29.418     [Action ] -         Open DB Table - '{CGDataMin}.GEALERTA (#280) (R,W)'
+ <-1> 29/06/2020 16:55:29.415     [Action ] -         >>Starts load Batch Task - 'PossuiAlertas' in Query mode (Task Instance: 6455, Resident)
+ <-1> 29/06/2020 16:55:29.419     [Action ] -         Ends Load Task
+ <-1> 29/06/2020 16:55:29.419     [Action ] -         9,95937  	PREPARE RngA574: SELECT  Cd_usu_aviso, Concluido, Dt_aviso, Hr_aviso, Id ,rowid FROM cigam.GEALERTA WHERE Cd_usu_aviso =  :1    AND Concluido =  :2    AND Dt_aviso <=  :3    ORDER BY Cd_usu_aviso  ASC, Concluido  ASC, Dt_aviso  ASC, Hr_aviso  ASC
+ <-1> 29/06/2020 16:55:29.419     [Action ] -         ),95937  	DESCRIBE :RngA574 INTO sqlda
+ <-1> 29/06/2020 16:55:29.419     [Action ] -          ,95937  	BIND :RngA574 INTO sqlda
+ <-1> 29/06/2020 16:55:29.420     [Action ] -          ,95937  	OPEN :RngA574 USING DESCRIPTOR sqlda
+ <-1> 29/06/2020 16:55:29.420     [Action ] -          ,95937  	EXECUTE RngA574 : SELECT  Cd_usu_aviso, Concluido, Dt_aviso, Hr_aviso, Id ,rowid FROM cigam.GEALERTA WHERE Cd_usu_aviso =  'A00'    AND Concluido =  'N'    AND Dt_aviso <=  '20200629'    ORDER BY Cd_usu_aviso  ASC, Concluido  ASC, Dt_aviso  ASC, Hr_aviso  ASC
+ <-1> 29/06/2020 16:55:29.420     [Action ] -         Load records
+ <-1> 29/06/2020 16:55:29.420     [Action ] -         Read Transaction 0
+ <-1> 29/06/2020 16:55:29.420     [Action ] -         Commit Transaction 0
+ <-1> 29/06/2020 16:55:29.420     [Action ] -         Starts Closing Batch Task - 'PossuiAlertas' (Task Instance: 6455)
+ <-1> 29/06/2020 16:55:29.420     [Action ] -            ,95937  	CLOSE :RngA574
+ <-1> 29/06/2020 16:55:29.421     [Action ] -            ,95937  	FREE :RngA574
+ <-1> 29/06/2020 16:55:29.421     [Action ] -           Closed database {CGDataMin}.GEALERTA (#280)
+ <-1> 29/06/2020 16:55:29.421     [Action ] -       <<Ends Close Task
+ <-1> 29/06/2020 16:55:29.421     [Action ] -       Flow - Evaluate: 
+ <-1> 29/06/2020 16:55:29.422     [Action ] -       Flow - Remark: 
+ <-1> 29/06/2020 16:55:29.422     [Action ] -     <<Ends Handle Timer Event: CGFunctions.00:01:00
+ <-1> 29/06/2020 16:55:50.202     [Action ] -       >>Starts Handle Timer Event: CGFunctions.00:15:00
+ <-1> 29/06/2020 16:55:50.202     [Action ] -         Flow - Remark: 
+ <-1> 29/06/2020 16:55:50.203     [Action ] -         Flow - Variable Virtual: 'c2543_TempoColeta'
+ <-1> 29/06/2020 16:55:50.203     [Action ] -         Flow - Remark: 
+ <-1> 29/06/2020 16:55:50.204     [Action ] -         Flow - Condition: Exp = 136, Result = False
+ <-1> 29/06/2020 16:55:50.204     [Action ] -         Flow - Block If:  [Not Executed]
+ <-1> 29/06/2020 16:55:50.204     [Action ] -         Flow - Block End: 
+ <-1> 29/06/2020 16:55:50.205     [Action ] -         Flow - Remark: 
+ <-1> 29/06/2020 16:55:50.205     [Action ] -       <<Ends Handle Timer Event: CGFunctions.00:15:00
+ <-1> 29/06/2020 16:56:29.427     [Action ] -     >>Starts Handle Timer Event: CGFunctions.00:01:00
+ <-1> 29/06/2020 16:56:29.427     [Action ] -       Flow - Remark: 
+ <-1> 29/06/2020 16:56:29.428     [Action ] -       Flow - Evaluate: 
+ <-1> 29/06/2020 16:56:29.428     [Action ] -       Flow - Call SubTask :: PossuiAlertas
+ <-1> 29/06/2020 16:56:29.429     [Action ] -         Open DB Table - '{CGDataMin}.GEALERTA (#280) (R,W)'
+ <-1> 29/06/2020 16:56:29.425     [Action ] -         >>Starts load Batch Task - 'PossuiAlertas' in Query mode (Task Instance: 6456, Resident)
+ <-1> 29/06/2020 16:56:29.430     [Action ] -         Ends Load Task
+ <-1> 29/06/2020 16:56:29.430     [Action ] -         9,55937  	PREPARE RngA574: SELECT  Cd_usu_aviso, Concluido, Dt_aviso, Hr_aviso, Id ,rowid FROM cigam.GEALERTA WHERE Cd_usu_aviso =  :1    AND Concluido =  :2    AND Dt_aviso <=  :3    ORDER BY Cd_usu_aviso  ASC, Concluido  ASC, Dt_aviso  ASC, Hr_aviso  ASC
+ <-1> 29/06/2020 16:56:29.430     [Action ] -         ),55937  	DESCRIBE :RngA574 INTO sqlda
+ <-1> 29/06/2020 16:56:29.430     [Action ] -          ,55937  	BIND :RngA574 INTO sqlda
+ <-1> 29/06/2020 16:56:29.431     [Action ] -          ,55937  	OPEN :RngA574 USING DESCRIPTOR sqlda
+ <-1> 29/06/2020 16:56:29.431     [Action ] -          ,55937  	EXECUTE RngA574 : SELECT  Cd_usu_aviso, Concluido, Dt_aviso, Hr_aviso, Id ,rowid FROM cigam.GEALERTA WHERE Cd_usu_aviso =  'A00'    AND Concluido =  'N'    AND Dt_aviso <=  '20200629'    ORDER BY Cd_usu_aviso  ASC, Concluido  ASC, Dt_aviso  ASC, Hr_aviso  ASC
+ <-1> 29/06/2020 16:56:29.431     [Action ] -         Load records
+ <-1> 29/06/2020 16:56:29.431     [Action ] -         Read Transaction 0
+ <-1> 29/06/2020 16:56:29.431     [Action ] -         Commit Transaction 0
+ <-1> 29/06/2020 16:56:29.431     [Action ] -         Starts Closing Batch Task - 'PossuiAlertas' (Task Instance: 6456)
+ <-1> 29/06/2020 16:56:29.432     [Action ] -            ,55937  	CLOSE :RngA574
+ <-1> 29/06/2020 16:56:29.432     [Action ] -            ,55937  	FREE :RngA574
+ <-1> 29/06/2020 16:56:29.432     [Action ] -           Closed database {CGDataMin}.GEALERTA (#280)
+ <-1> 29/06/2020 16:56:29.432     [Action ] -       <<Ends Close Task
+ <-1> 29/06/2020 16:56:29.432     [Action ] -       Flow - Evaluate: 
+ <-1> 29/06/2020 16:56:29.433     [Action ] -       Flow - Remark: 
+ <-1> 29/06/2020 16:56:29.433     [Action ] -     <<Ends Handle Timer Event: CGFunctions.00:01:00
+
